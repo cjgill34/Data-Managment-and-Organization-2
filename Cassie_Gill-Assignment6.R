@@ -1,0 +1,5 @@
+library(RODBC)
+library(DBI)
+library(odbc)
+conn1 <- odbcConnect("MySQL_DSN")
+sqlQuery(conn1, 'SELECT * FROM ecity.salesbymonth')
